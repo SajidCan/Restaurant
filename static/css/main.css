@@ -1,0 +1,412 @@
+h2{
+  font-family: 'Just Me Again Down Here', cursive;
+  font-size: 45px;
+}
+.navbar-nav .nav-item .log{
+  font-family: 'Just Me Again Down Here', cursive;
+  background: white;
+  color: red;
+  border: 1px solid transparent;
+  font-size: 20px;
+}
+.navbar-nav .nav-item .log:hover{
+  background: red;
+  color: white;
+  border: 1px solid white;
+}
+.red:hover{
+  background: white !important;
+  color: red;
+  text-decoration: none;
+  border: 1px solid black;
+}
+.red{
+  font-family: 'Just Me Again Down Here', cursive;
+  background: red;
+  border: 1px solid transparent;
+  padding: 2px 2px 8px 8px;
+  text-decoration: none;
+  border-radius: 3px;
+  color: white;
+  font-size: 20px;
+}
+.navbar-nav .nav-item{
+  margin-right: 10px;
+}
+.scrl{
+  overflow: scroll;
+}
+.no_border{
+  border: 0px !important;
+}
+h2 span{
+  font-size: 60px;
+}
+h2 .resize{
+  width: 80px;
+  animation: shake 1s;
+  animation-iteration-count: infinite;
+}
+.checked{
+  color: red;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+.card{
+  height: 350px;
+  overflow: auto;
+  border-radius: 10px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0px -1px 8px 1px rgba(11,5,5,0.72);
+  -webkit-box-shadow: 0px -1px 8px 1px rgba(11,5,5,0.72);
+  -moz-box-shadow: 0px -1px 8px 1px rgba(11,5,5,0.72);
+  border: 0px;
+}
+.slicky{
+  background: url("/media/banner.jpg") no-repeat fixed;
+  border-radius: 0px 0px 10px 10px;
+}
+
+.slicky .slick-list{
+  margin-right: 25px;
+}
+.review_slicky .slick-list{
+  margin-right: 25px;
+}
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  opacity: 1;
+  transition: opacity 0.6s;
+  margin-bottom: 15px;
+}
+.change_color{
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+}
+.bg{
+  background: url("/media/banner.jpg") no-repeat fixed;
+  height: 600px;
+  border-radius: 0px 0px 10px 10px;
+}
+.overlay{
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 0px 0px 10px 10px;
+}
+.overlay h1{
+  font-family: 'Just Me Again Down Here', cursive;
+  color: white;
+  font-size: 60px;
+  padding-top: 200px;
+  padding-bottom: 152px;
+}
+.overlay span{
+  font-family: 'Modak', cursive;
+  color: white;
+  opacity: 0.6;
+  background: red;
+  border-radius: 20px;
+  font-size: 70px;
+}
+.alert.info {background-color: #2196F3;}
+
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+.next{
+  display: block;
+  color: blue;
+  font-weight: bold;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+.name_part{
+  border-right: 2px solid #bbbfbc;
+}
+.para_part p{
+  font-size: 18px;
+
+}
+.full_part{
+  border: 2px solid black;
+  border-radius: 10px;
+  background: #e3cbcb;
+}
+.pad_bot{
+  padding-bottom: 50px;
+}
+.wide{
+  width: 100px;
+}
+.max_heigh{
+  height:410px;
+  border-bottom: 2px solid aliceblue;
+}
+.pad_top{
+  text-align: center;
+/* padding-left: 120px; */
+}
+.pad_top img{
+  border-radius: 20px;
+  border: 2px solid red;
+  height: 330px;
+  width: 300px;
+}
+.card-body{
+  border-radius: 20px;
+  border: 2px solid red;
+  height: 355px;
+}
+
+.bg-light{
+  background-color:red !important;
+  opacity: 0.7;
+}
+.navbar-light .navbar-nav .nav-link{
+  color:white;
+}
+.navbar-light .navbar-nav .nav-link i{
+  font-size: 20px;
+
+}
+.nav-item .dropdown-item:hover{
+  background: red;
+  color: white;
+
+}
+
+.navbar-light .navbar-brand{
+  font-family: 'Just Me Again Down Here', cursive;
+  color: white;
+  font-size: 30px;
+}
+.slick-prev.pull-left.slick-arrow {
+
+  position: relative;
+  top: 182px;
+  left: -38px;
+  font-size: 50px;
+  background: none;
+  border: transparent;
+}
+.review_slicky .slick-prev.pull-left.slick-arrow{
+  position: relative;
+  top: 140px;
+  left: -10px;
+  font-size: 50px;
+  background: none;
+  border: transparent;
+}
+.slick-next.pull-right.slick-arrow {
+  position: relative;
+  top: -234px;
+  right: -40px;
+  font-size: 50px;
+  background: none;
+  border: transparent;
+}
+.review_slicky .slick-next.pull-right.slick-arrow {
+  position: relative;
+  top: -207px;
+  right: -10px;
+  font-size: 50px;
+  background: none;
+  border: transparent;
+}
+.foot{
+  width: 100%;
+  padding-top: 35px;
+  background: black;
+  padding-bottom: 35px
+}
+
+.foot h4{
+  color: white;
+}
+
+.review{
+  text-align:center !important;
+  height: 350px;
+  background: black;
+  padding-top: 50px;
+  overflow: auto;
+}
+.review h3{
+  color: white;
+}
+.review p{
+  color: red;
+}
+.review img{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+/* margin-left: 215px; */
+}
+.slick-slide img{
+  display: inline;
+}
+.category_card{
+  text-align: center;
+  padding-bottom: 50px;
+  background: black;
+  padding-top: 50px;
+  border-radius: 50px;
+}
+.category_card:hover{
+  box-shadow: 2px 4px 13px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 2px 4px 13px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 2px 4px 13px 0px rgba(0,0,0,0.75);
+  background: white;
+}
+.category_card:hover a{
+  color: black;
+}
+.category_card .img-wrap{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 20px;
+  height: 150px;
+  text-align: center;
+  border-bottom: 1px solid aliceblue;
+}
+.category_card:hover .img-wrap{
+  border-bottom: 1px solid black;
+}
+.category_card a{
+  color: white;
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 30px;
+  text-decoration:none;
+}
+.category_card .img-wrap img{
+  max-height: 100%;
+  max-width: 100%;
+}
+.about{
+  background:black;
+  text-align:center;
+  border-radius: 0px 0px 0px 10px;
+  /* padding-top: 144px; */
+  height: 350px;
+}
+.contact{
+  background:black;
+  text-align:center;
+  border-radius: 0px 0px 10px 0px;
+  height: 350px;
+}
+.contact h2{
+  color: white;
+  line-height: 350px;
+}
+.about h2{
+  color: white;
+  line-height: 350px;
+/* padding-bottom: 152px; */
+}
+
+.para{
+  height: 350px;
+  overflow: auto;
+  background:red;
+  text-align:center;
+  font-family: 'Kalam', cursive;
+  opacity: 0.9;
+  border-radius: 0px 0px 10px 0px;
+}
+.para p{
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+  color: white;
+  padding-top: 80px;
+/* padding-bottom: 70px; */
+}
+.contact_para{
+  height: 350px;
+  overflow:auto;
+  background:red;
+  text-align:center;
+  font-family: 'Kalam', cursive;
+  opacity: 0.9;
+  border-radius: 0px 0px 0px 10px;
+}
+.contact_para p{
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+  color: white;
+  padding-top: 80px;
+}
+.reviews h2{
+  padding-bottom: 40px;
+}
+.card-product:after{
+  content: '';
+  display: table;
+  clear:both;
+  visibility: hidden;
+}
+.card-product .price-new, .card-product .price{
+  margin-right: 5px;
+}
+.card-product .price-old{
+  color:#999;
+}
+.card-product .img-wrap{
+  border-radius: 10px 10px 0 0;
+  overflow: hidden;
+  position: relative;
+  height: 220px;
+  text-align: center;
+}
+.card-product .info-wrap{
+  overflow: auto;
+  padding: 15px;
+  border-top: 1px solid #eee;
+}
+.card-product .action-wrap{
+  padding-top: 4px;
+  margin-top: 4px;
+}
+.card-product .bottom-wrap{
+  padding: 15px;
+  border-top: 1px solid #eee;
+}
+.card-product .title{
+  margin-top: 0;
+}
+.card-product .img-wrap img{
+  max-height: 100%;
+  max-width: 100%;
+}

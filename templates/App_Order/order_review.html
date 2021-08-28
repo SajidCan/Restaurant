@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block title_block%} Order Review {% endblock %}
+{% block body_block %}
+<div class="container mt-5">
+  <h2 class="text-center"><strong>Your Unreviewed Order</strong></h2>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card mt-5" style="height:auto">
+        <div class="table-responsive">
+          <div class="table">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">Order Id</th>
+                  <th scope="col">Products</th>
+                  <th scope="col">Feedback</th>
+                </tr>
+              </thead>
+              <tbody>
+                  <tr>
+                    <td><a href="#">{{order.orderId}}</a></td>
+                    <td>{% for item in order.orderitems.all %}{{item}}<br> {% endfor%}</td>
+                    <td><a href="{% url 'App_Order:feedback' pk=order.pk %}"><b>Write Us Here</b></a></td>
+                  </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 my-5 text-center">
+        <a href="{% url 'App_Shop:home' %}" class="red">Back To Home</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

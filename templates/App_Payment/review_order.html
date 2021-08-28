@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block title_block%} Food Review {% endblock %}
+{% block body_block %}
+<div class="container mt-5">
+  <h2 class="text-center"><strong>Your Ordered Food</strong></h2>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card mt-5" style="height:auto">
+        <div class="table-responsive">
+          <div class="table">
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col">#</th>
+                  <th scope="col">Category</th>
+                  <th scope="col">Food</th>
+                  <th scope="col">Review</th>
+
+
+                </tr>
+              </thead>
+              <tbody>
+                {% for food in rev.orderitems.all %}
+                  <!-- {% if not food.reviewed_food%} -->
+                  <tr>
+                    <th scope="row">{{forloop.counter}}</th>
+                    <td scope="col"><a href="#">{{food.item.category}}</a></td>
+                    <td scope="col">{{food.item.name}}</td>
+                    <td scope="col">
+                      {% if reviewed %}
+                        <a href="#">Review Done</a>
+                      {% else %}
+                      <a href="{% url 'App_Payment:review' pk=food.item.pk fk=fk%}" class="btn btn-info btn-sm">Review The Food</a>
+                      <!-- {% endif %} -->
+                    </td>
+                  </tr>
+                  {% endif %}
+                {% endfor %}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-12 my-5 text-center">
+        <a href="{% url 'App_Shop:home' %}" class="red">Back To Home</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

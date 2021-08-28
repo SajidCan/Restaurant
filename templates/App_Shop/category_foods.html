@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block title_block%} Category Food {% endblock %}
+{% block body_block %}
+<div class="container my-5">
+  <a href="{% url 'App_Shop:home' %}"><i class="fa fa-angle-left"></i> Back </a>
+<h2 class="my-5">{{categories.title}} :
+  <img class="resize" src="/media/{{categories.category_image}}" alt="">
+</h2>
+<div class="row">
+
+  {% for food in foods %}
+    <div class="col-md-6 col-sm-12 col-lg-3">
+      <figure class="card card-product">
+        <div class="img-wrap">
+          <img src="/media/{{food.mainimage}}" alt="" style="width:100%; height:300px;">
+        </div>
+        <figcaption class="info-wrap">
+          <h6 class="title"><a href="{% url 'App_Shop:food_details' pk=food.pk%}">{{food.name}}</a></h6>
+          <div class="action-wrap">
+            <div class="price-wrap h5">
+              <span class="price-new">&#2547; {{food.price|floatformat:2}}</span>
+              <span class="price-old"><strike>&#2547; {{food.old_price|floatformat:2}}</strike></span>
+            </div>
+          </div>
+        </figcaption>
+      </figure>
+    </div>
+    {% endfor %}
+</div>
+
+  <br>
+{% endblock %}

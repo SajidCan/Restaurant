@@ -12,14 +12,14 @@
         <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="fa fa-user-tie"></i></a>
           <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <a href="{% url 'App_Login:user_profile' %}" class="dropdown-item">Profile</a>
+            <a href="{% url 'App_Login:user_profile' %}" class="dropdown-item pd">Profile</a>
             <a href="{% url 'App_Payment:order'%}" class="dropdown-item">Orders</a>
             <div class="dropdown-divider"></div>
             <a href="{% url 'App_Login:logout'%}" class="dropdown-item">Log Out</a>
           </div>
         </li>
         {% else %}
-        <li class="nav-item"><a href="{% url 'App_Login:sign_up' %}" class="btn btn-primary log">SignUp</a></li>
+        <li class="nav-item"><a href="{% url 'App_Login:sign_up' %}" class="btn btn-primary log mb-2">SignUp</a></li>
         <li class="nav-item"><a href="{% url 'App_Login:login'%}" class="btn btn-primary log">Login</a></li>
         {% endif %}
       </ul>

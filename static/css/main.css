@@ -201,7 +201,9 @@ h2 .resize{
   color: white;
 
 }
-
+.dropdown-menu{
+  min-width: 9rem !important;
+}
 .navbar-light .navbar-brand{
   font-family: 'Just Me Again Down Here', cursive;
   color: white;
@@ -410,3 +412,101 @@ h2 .resize{
   max-height: 100%;
   max-width: 100%;
 }
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 300px) and (max-width: 589px) {
+  .overlay span{
+    font-size: 55px;
+  }
+  .overlay h1{
+    font-size: 45px;
+  }
+  h2{
+    font-size: 25px;
+  }
+  .bg{
+    height: 546px;
+  }
+  .slick-prev.pull-left.slick-arrow{
+    left: 10px;
+    color: white;
+  }
+  .slick-next.pull-right.slick-arrow{
+    right: 10px;
+    color: white;
+  }
+  .category_card a{
+    font-size: 25px;
+  }
+  .para p, .contact_para p{
+    font-size: 15px;
+  }
+  .review_slicky .slick-prev.pull-left.slick-arrow{
+    left: 5px;
+    color: black;
+  }
+  .review_slicky .slick-next.pull-right.slick-arrow{
+    right: 5px;
+    color: black;
+  }
+  .review h3{
+    font-size: 17px;
+  }
+  .review p{
+    font-size: 13px;
+    padding: 0px 10px;
+  }
+  .foot h4{
+    font-size: 20px;
+  }
+}
+@media (min-width: 590px) and (max-width: 767px) {
+  .foot h4{
+    font-size: 20px;
+  }
+  h2{
+    font-size: 30px;
+  }
+  .category_card a{
+    font-size: 28px;
+  }
+  .review p{
+    font-size: 14px;
+    padding: 0px 15px;
+  }
+  .review h3{
+    font-size: 20px;
+  }
+  .contact_para p{
+    font-size: 15px;
+  }
+  .para p{
+    font-size: 15px;
+  }
+  .slick-prev.pull-left.slick-arrow{
+    left: -30px;
+  }
+  .slick-next.pull-right.slick-arrow{
+    right: -27px;
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .review h3{
+    font-size: 20px;
+  }
+  .review p{
+    font-size: 15px;
+  }
+  .contact_para p{
+    font-size: 15px;
+  }
+  .para p{
+    font-size: 15px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { ... }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { ... }
